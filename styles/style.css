@@ -1,143 +1,402 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    display: block;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    background-color: #f5f5f5;
-    color: #616161;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  background-color: #f5f5f5;
+  color: #616161;
 }
 
 /* Header hamburger and menu properities*/
 #home .menu {
-    /*side menu*/
-    position: fixed;
-    left: -225px;
-    width: 225px;
-    height: 100%;
-    top: 0;
-    z-index: 10;
-    text-align: left;
-    background: #06A763; }
-    #home .menu a {
-      /*menu links*/
-      margin-left: 30px;
-      margin-right: 30px;
-      color: #616161;
-      display: block;
-      font-size: 12px;
-      font-weight: 700;
-      line-height: 40px;
-      letter-spacing: .1em;
-      text-transform: uppercase; }
-      #home .menu a:hover {
-        /*link option hover color*/
-        color: #1976D2; }
-      #home .menu a:active {
-        /*option active color*/
-        color: #1976D2; }
-    #home .menu i {
-      /*menu icon*/
-      padding: 7px; }
-    #home .menu .menu-wrap {
-      /*menu warp class*/
-      position: absolute;
-      top: 0;
-      left: 0;
-      background: #f5f5f5;
-      width: 225px;
-      height: 100%;
-      overflow-y: auto;
-      padding-top: 14px; }
-    #home .menu .logo-flat {
-      /*menu logo*/
-      height: 200px;
-      margin-top: -14px;
-      background: #06A763; }
-      #home .menu .logo-flat img {
-        /*logo image*/
-        width: 100%;
-        padding: 30px 44px 44px 44px; }
-  #home .menu-open {
-    /*set left 0 to open menu*/
-    left: 0; }
-  #home .body-push {
-    overflow-x: hidden;
+  /*side menu*/
+  position: fixed;
+  left: -225px;
+  width: 225px;
+  height: 100%;
+  top: 0;
+  z-index: 10;
+  text-align: left;
+  background: #06a763;
+}
+#home .menu a {
+  /*menu links*/
+  margin-left: 30px;
+  margin-right: 30px;
+  color: #616161;
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+#home .menu a:hover {
+  /*link option hover color*/
+  color: #06a763;
+}
+#home .menu a:active {
+  /*option active color*/
+  color: #06a763;
+}
+#home .menu i {
+  /*menu icon*/
+  padding: 7px;
+}
+#home .menu .menu-wrap {
+  /*menu warp class*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #f5f5f5;
+  width: 225px;
+  height: 100%;
+  overflow-y: auto;
+  padding-top: 14px;
+}
+#home .menu .logo-flat {
+  /*menu logo*/
+  height: 200px;
+  margin-top: -14px;
+  background: #06a763;
+}
+#home .menu .logo-flat img {
+  /*logo image*/
+  width: 100%;
+  padding: 30px 44px 44px 44px;
+}
+#home .menu-open {
+  /*set left 0 to open menu*/
+  left: 0;
+}
+#home .body-push {
+  overflow-x: hidden;
+  position: relative;
+  right: 0;
+}
+#home .body-push-toright {
+  /*push to right*/
+  right: 225px;
+}
+#home .body-push-toleft {
+  /*push to left on click*/
+  right: 225px;
+}
+#home .menu,
+#home .body-push {
+  /*menu easing effect*/
+  transition: all 0.3s ease;
+}
+#home #menuToggle {
+  /*menu toggle style*/
+  position: absolute;
+  top: 20px;
+  right: -65px;
+  z-index: 11;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  border: 1px solid rgba(93, 92, 92, 0.52);
+  background: rgba(0, 0, 0, 0.06);
+  transition: all 0.5s ease-in-out;
+}
+#home #menuToggle:hover {
+  /*toggle hover style*/
+  background: rgba(0, 0, 0, 0.3);
+  transition: all 0.5s ease-in-out;
+}
+#home #menuToggle .toggle-normal {
+  font-size: 31px;
+}
+#home #menuToggle .toggle-normal i {
+  font-size: 31px;
+  padding: 4px;
+  color: #06a763;
+}
+#home #menuToggle .toggle-normal .top-bar {
+  position: absolute;
+  right: 0;
+  top: -6px;
+  transition: 0.8s;
+}
+#home #menuToggle .toggle-normal .middle-bar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 1;
+  transition: 0.8s;
+}
+#home #menuToggle .toggle-normal .bottom-bar {
+  position: absolute;
+  right: 0;
+  top: 6px;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  transition: 0.8s;
+}
+#home #menuToggle .top-transform {
+  -webkit-transform: rotate(45deg) !important;
+  transform: rotate(45deg) !important;
+  -webkit-transform-origin: 34% 56%;
+  transform-origin: 34% 56%;
+}
+#home #menuToggle .middle-transform {
+  opacity: 0 !important;
+}
+#home #menuToggle .bottom-transform {
+  -webkit-transform: rotate(-45deg) !important;
+  transform: rotate(-45deg) !important;
+  -webkit-transform-origin: 28% 43%;
+  transform-origin: 28% 43%;
+}
+#home .header-background {
+  /*home background*/
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 370px;
+  background: url(../images/backgrounds/background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+/* ============== VCARD ================== */
+
+#v-card-holder {
+  /*card holder*/
+  overflow: visible;
+  width: 100%;
+  height: auto;
+  margin-top: -194px;
+}
+#v-card-holder #v-card {
+  /*v-card with fixed 400px height*/
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  transition: height 1s, color 1s, margin 1s;
+  z-index: 1;
+  background: #f5f5f5;
+  margin: -33px 3px 0 0;
+}
+#v-card-holder #v-card .info-headings {
+  /*basic infos*/
+  max-width: 514px;
+}
+#v-card-holder #v-card .info-headings h4 {
+  /*name*/
+  display: block;
+  width: 100%;
+  font-weight: 900;
+  color: #616161;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
+}
+#v-card-holder #v-card .info-headings h6 {
+  /*details*/
+  display: block;
+  width: 100%;
+  font-weight: 300;
+  margin-top: -10px;
+  margin-bottom: 30px;
+  font-size: 1.2em;
+  color: #616161;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
+}
+#v-card-holder #v-card .infos {
+  /*detailed infos*/
+  max-width: 515px;
+  margin-top: 99px;
+}
+#v-card-holder #v-card .infos .profile-list {
+  /*list*/
+}
+#v-card-holder #v-card .infos .profile-list .title {
+  /*info title*/
+  display: block;
+  float: left;
+  color: #616161;
+  line-height: 26px;
+}
+#v-card-holder #v-card .infos .profile-list .title i {
+  /*matching icon*/
+  font-size: 23px;
+}
+#v-card-holder #v-card .infos .profile-list .title .fa {
+  /*for font awesome*/
+  padding-left: 2px;
+}
+#v-card-holder #v-card .infos .profile-list .content {
+  /*infos content*/
+  display: block;
+  margin-left: 30px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #616161;
+}
+#v-card-holder #v-card .links {
+  /*social links*/
+  max-width: 500px;
+  margin-left: -12px;
+  margin-top: 12px;
+  height: 100%;
+}
+#v-card-holder #v-card .links .social {
+  /*class*/
+  margin-left: 12px;
+  margin-bottom: 4px;
+}
+#v-card-holder #v-card .links .social i {
+  /*icon*/
+  font-size: 15px;
+  vertical-align: middle;
+  padding-bottom: 15px;
+}
+@media screen and (max-width: 400px) {
+  #v-card-holder #v-card .links .social {
+    /*making links responsive*/
+    margin: 4px;
+  }
+}
+@media screen and (max-width: 295px) {
+  #v-card-holder #v-card .links .social {
+    /*making links responsive*/
+    margin: 1px;
+  }
+}
+@media screen and (max-width: 990px) {
+  #v-card-holder #v-card .infos {
+    /*max width for infos*/
+    max-width: 278px;
+  }
+  #v-card-holder #v-card .links {
+    /*max width for links*/
+    max-width: 325px;
+  }
+  #v-card-holder #v-card .info-headings {
+    /*max width for headings*/
+    max-width: 270px;
+  }
+}
+#v-card-holder #v-card #profile {
+  /*profile area*/
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+#v-card-holder #v-card #profile img {
+  /*user image for 400x400px image*/
+  width: 400px;
+  height: auto;
+}
+#v-card-holder #v-card #profile .slant {
+  /*slant*/
+  top: 0;
+  z-index: 1;
+  position: absolute;
+  border-style: solid;
+  border-width: 400px 0 0 100px;
+  border-color: rgba(223, 50, 50, 0) transparent transparent #f5f5f5;
+}
+#v-card-holder #v-card #profile .add-btn {
+  /*plus button*/
+  position: absolute;
+  background-color: #06a763;
+  top: 20%;
+  right: 86%;
+  overflow: hidden;
+}
+#v-card-holder #v-card #profile .add-btn i {
+  /*icon*/
+  font-size: 35px;
+  color: #f5f5f5;
+}
+
+@media screen and (max-width: 767px) {
+  /*at max width 767*/
+  #v-card-holder #v-card {
+    /*v-card at max width 767*/
     position: relative;
-    right: 0; }
-  #home .body-push-toright {
-    /*push to right*/
-    right: 225px; }
-  #home .body-push-toleft {
-    /*push to left on click*/
-    right: 225px; }
-  #home .menu, #home .body-push {
-    /*menu easing effect*/
-    transition: all .3s ease; }
-  #home #menuToggle {
-    /*menu toggle style*/
-    position: absolute;
-    top: 20px;
-    right: -65px;
-    z-index: 11;
-    display: block;
-    text-align: center;
-    font-size: 14px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    cursor: pointer;
-    border: 1px solid rgba(93, 92, 92, 0.52);
-    background: rgba(0, 0, 0, 0.06);
-    transition: all .5s ease-in-out; }
-    #home #menuToggle:hover {
-      /*toggle hover style*/
-      background: rgba(0, 0, 0, 0.3);
-      transition: all .5s ease-in-out; }
-    #home #menuToggle .toggle-normal {
-      font-size: 31px; }
-      #home #menuToggle .toggle-normal i {
-        font-size: 31px;
-        padding: 4px;
-        color: #1976D2; }
-      #home #menuToggle .toggle-normal .top-bar {
-        position: absolute;
-        right: 0;
-        top: -6px;
-        transition: .8s; }
-      #home #menuToggle .toggle-normal .middle-bar {
-        position: absolute;
-        right: 0;
-        top: 0;
-        opacity: 1;
-        transition: .8s; }
-      #home #menuToggle .toggle-normal .bottom-bar {
-        position: absolute;
-        right: 0;
-        top: 6px;
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-        transition: .8s; }
-    #home #menuToggle .top-transform {
-      -webkit-transform: rotate(45deg) !important;
-      transform: rotate(45deg) !important;
-      -webkit-transform-origin: 34% 56%;
-      transform-origin: 34% 56%; }
-    #home #menuToggle .middle-transform {
-      opacity: 0 !important; }
-    #home #menuToggle .bottom-transform {
-      -webkit-transform: rotate(-45deg) !important;
-      transform: rotate(-45deg) !important;
-      -webkit-transform-origin: 28% 43%;
-      transform-origin: 28% 43%; }
-  #home .header-background {
-    /*home background*/
-    position: relative;
-    display: block;
     width: 100%;
-    height: 370px;
-    background: url(../images/backgrounds/background.jpg) no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed; }
+    overflow: visible;
+    z-index: 1;
+    top: 34px;
+  }
+  #v-card-holder #v-card #profile {
+    /*profile v-card at max width 767*/
+    position: absolute;
+    bottom: 85%;
+    left: 0;
+    width: 150px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 1;
+    background-color: transparent;
+  }
+  #v-card-holder #v-card #profile img {
+    /*image at max width 767*/
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+      0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  }
+  #v-card-holder #v-card #profile .slant {
+    /*hide slant*/
+    display: none;
+    opacity: 0;
+    overflow: hidden;
+  }
+  #v-card-holder #v-card #profile .add-btn {
+    /*hide add button*/
+    display: none;
+  }
+  #v-card-holder #v-card .social {
+    /*links styles at max width 767*/
+    top: 0;
+    margin-left: 5px;
+    margin-bottom: 4px;
+  }
+
+  #v-card-holder #v-card .infos {
+    /*infos at max width 767*/
+    display: table;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0;
+  }
+  #v-card-holder #v-card .links {
+    /*links at max width 767*/
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    margin: 0 auto 9px;
+  }
+  #v-card-holder #v-card .links #first_one {
+    /*first link at max width 767*/
+    margin-left: 0;
+  }
+  #v-card-holder #v-card .info-headings {
+    /*heading at max width 767*/
+    max-width: 100%;
+    text-align: center;
+    margin-top: 38px;
+  }
+  #v-card-holder #v-card .info-headings h6 {
+    margin-bottom: 20px;
+  }
+  #v-card-holder #v-card .card-content {
+    /*content padding*/
+    padding: 10px;
+  }
+}
