@@ -10,6 +10,14 @@ body {
   color: #616161;
 }
 
+.container {
+  /*container properties*/
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 h1,
 h2,
 h3,
@@ -540,4 +548,31 @@ video {
     /*content padding*/
     padding: 10px;
   }
+}
+
+/* About me styling */
+#about {
+  /*profile about*/
+  /* margin-top: 222px;*/
+  transition: all 1s;
+}
+#about .about-btn {
+  /*about buttons*/
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  animation-delay: 1s;
+  text-align: center;
+}
+#about .about-btn .btn {
+  /*button style*/
+  margin: 7px 7px;
+  background: #06a763;
+  color: #f5f5f5;
+  width: 180px;
+  border-radius: 2px;
+}
+#about .about-btn .btn:hover {
+  /*hover effect*/
+  background: #05985a;
 }
