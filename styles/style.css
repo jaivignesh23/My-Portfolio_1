@@ -10,6 +10,126 @@ body {
   color: #616161;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  font-family: "Raleway", sans-serif;
+}
+
+h4 {
+  font-size: 2.18rem;
+  line-height: 110%;
+  margin: 1.14rem 0 0.912rem 0;
+}
+
+p,
+a,
+li,
+label,
+input,
+blockquote,
+cite,
+div {
+  font-family: "Muli", sans-serif;
+}
+
+p {
+  color: #757575;
+}
+
+a {
+  color: #06a763;
+}
+a:hover {
+  color: #07c977;
+  text-decoration: none;
+}
+a:focus {
+  color: #046c40;
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2,
+h3,
+h4 {
+  font-weight: 600;
+}
+
+h5,
+h6 {
+  font-weight: 500;
+}
+
+p,
+a,
+li {
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 1.4em;
+}
+
+/* ============================== Utilities ==============================*/
+.is-hidden {
+  visibility: hidden;
+}
+
+.btn {
+  padding-top: 8px;
+}
+
+.social {
+  z-index: 0 !important;
+}
+
+video {
+  border: 3px solid black;
+}
+
+.black {
+  /*bg color change to black*/
+  background-color: black !important;
+}
+
+.hide-overflow {
+  /*hides overflow*/
+  overflow: hidden !important;
+}
+
+.toast {
+  background-color: #06a763;
+}
+
+/* ================================= Card layout ===================================*/
+.card {
+  /*card layout*/
+  position: relative;
+  background-color: #f5f5f5;
+  transition: box-shadow 0.25s;
+  -webkit-transition: box-shadow 0.25s;
+  border-radius: 0 !important;
+  margin: 8px 0;
+}
+.card .card-content {
+  /*card content*/
+  padding: 40px;
+  border-radius: 0 0 2px 2px;
+}
+.card .card-content p {
+  /*paragraph style inside card content*/
+  margin: 0;
+  color: inherit;
+  text-align: center;
+}
 /* Header hamburger and menu properities*/
 #home .menu {
   /*side menu*/
@@ -215,9 +335,6 @@ body {
   /*detailed infos*/
   max-width: 515px;
   margin-top: 99px;
-}
-#v-card-holder #v-card .infos .profile-list {
-  /*list*/
 }
 #v-card-holder #v-card .infos .profile-list .title {
   /*info title*/
