@@ -284,7 +284,11 @@
         </div>
         <!-- <div class="row"> -->
         <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-1">
-          <div class="col-sm-3">
+          <div
+            class="col-sm-3"
+            data-toggle="modal"
+            data-target="#modal-programming"
+          >
             <!-- service item -->
             <div class="service-item">
               <div class="icon"><i class="fas fa-desktop"></i></div>
@@ -292,7 +296,11 @@
             </div>
             <!-- service item end -->
           </div>
-          <div class="col-sm-3">
+          <div
+            class="col-sm-3"
+            data-toggle="modal"
+            data-target="#modal-frontEnd"
+          >
             <!-- service item -->
             <div class="service-item">
               <div class="icon"><i class="fas fa-mobile-alt"></i></div>
@@ -300,7 +308,11 @@
             </div>
             <!-- service item end -->
           </div>
-          <div class="col-sm-3">
+          <div
+            class="col-sm-3"
+            data-toggle="modal"
+            data-target="#modal-backEnd"
+          >
             <!-- service item -->
             <div class="service-item">
               <div class="icon"><i class="far fa-lightbulb"></i></div>
@@ -308,7 +320,7 @@
             </div>
             <!-- service item end -->
           </div>
-          <div class="col-sm-3">
+          <div class="col-sm-3" data-toggle="modal" data-target="#modal-miscl">
             <!-- service item -->
             <div class="service-item">
               <div class="icon"><i class="fas fa-briefcase"></i></div>
@@ -332,5 +344,149 @@
         </div>
       </div>
     </section>
+
+    <!-- Modal contents -->
+
+    <!-- Modal for Programming -->
+    <div
+      class="modal fade"
+      id="modal-programming"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel-1"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <!--MODAL HEADER-->
+          <div class="modal-header text-center">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true"><i class="fa fa-close"></i></span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel-1">
+              Programming languages
+            </h4>
+          </div>
+          <!--MODAL BODY-->
+          <div class="modal-body">
+            <p>test</p>
+          </div>
+          <!--MODAL FOOTER-->
+          <div class="modal-footer">
+            <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Frontend -->
+    <div
+      class="modal fade"
+      id="modal-frontEnd"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel-2"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <!--MODAL HEADER-->
+          <div class="modal-header text-center">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true"><i class="fa fa-close"></i></span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel-2">
+              Front-end Technologies
+            </h4>
+          </div>
+          <!--MODAL BODY-->
+          <div class="modal-body">
+            <p>test</p>
+          </div>
+          <!--MODAL FOOTER-->
+          <div class="modal-footer">
+            <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Backend -->
+    <div
+      class="modal fade"
+      id="modal-backEnd"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel-3"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <!--MODAL HEADER-->
+          <div class="modal-header text-center">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true"><i class="fa fa-close"></i></span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel-3">
+              Back-end Technologies
+            </h4>
+          </div>
+          <!--MODAL BODY-->
+          <div class="modal-body">
+            <p>test</p>
+          </div>
+          <!--MODAL FOOTER-->
+          <div class="modal-footer">
+            <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Misc -->
+    <div
+      class="modal fade"
+      id="modal-miscl"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel-4"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <!--MODAL HEADER-->
+          <div class="modal-header text-center">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true"><i class="fa fa-close"></i></span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel-4">Miscellaneous</h4>
+          </div>
+          <!--MODAL BODY-->
+          <div class="modal-body">
+            <p>test</p>
+          </div>
+          <!--MODAL FOOTER-->
+          <div class="modal-footer">
+            <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
