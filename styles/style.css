@@ -650,3 +650,51 @@ video {
 .timeline-block .timeline-content .timeline-info h6 small {
   color: inherit;
 }
+
+.service-item {
+  text-align: left;
+  padding: 14px;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  background-color: #06a763;
+}
+
+.service-item .icon {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  color: #333;
+  border-radius: 35px 35px 35px 0px;
+  background-color: #ffd234;
+  font-size: 20px;
+  position: relative;
+  margin: 0 0 15px 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.service-item:hover .icon {
+  background-color: #1748c8;
+  color: #fff;
+  border-radius: 35px 35px 0px 35px;
+}
+
+.service-item .title {
+  color: #fff;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 600;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
