@@ -550,7 +550,8 @@ video {
   }
 }
 
-/* About me styling */
+/* ================================= About me styling ===================================*/
+
 #about {
   /*profile about*/
   /* margin-top: 222px;*/
@@ -575,4 +576,77 @@ video {
 #about .about-btn .btn:hover {
   /*hover effect*/
   background: #05985a;
+}
+
+/* ================================= Education layout ===================================*/
+
+#timeline-education {
+  position: relative;
+}
+#timeline-education:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 23px;
+  left: 50%;
+  height: 99.5%;
+  width: 4px;
+  opacity: 0.3;
+  background: #06a763;
+}
+
+.timeline-block {
+  position: relative;
+}
+.timeline-block::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.timeline-block:first-child {
+  margin-top: 0;
+}
+.timeline-block:last-child {
+  margin-bottom: 0;
+}
+.timeline-block .card-content {
+  padding: 20px;
+}
+.timeline-block .card-content p {
+  margin-top: 13px;
+  text-align: left;
+}
+.timeline-block .timeline-content {
+  position: relative;
+  background: #f5f5f5;
+  margin-right: 0;
+  z-index: 1;
+  margin-bottom: 5px;
+  border-left: 5px solid #06a763;
+}
+/* .timeline-block .timeline-content::before {
+  content: "";
+  width: 58px;
+  height: 4px;
+  position: absolute;
+  top: 26px;
+  left: 100%;
+  z-index: -2;
+  opacity: 0.4;
+  background: #06a763;
+} */
+.timeline-block .timeline-content::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.timeline-block .timeline-content .timeline-title {
+  max-width: 84%;
+  font-weight: normal;
+}
+.timeline-block .timeline-content .timeline-info h6 {
+  line-height: 12px;
+}
+.timeline-block .timeline-content .timeline-info h6 small {
+  color: inherit;
 }
