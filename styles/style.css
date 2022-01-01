@@ -651,6 +651,15 @@ video {
   color: inherit;
 }
 
+.timeline-list {
+  padding-left: 15px !important;
+  list-style-type: disc !important;
+}
+
+.timeline-list li {
+  list-style-type: disc !important;
+}
+
 .service-item {
   text-align: left;
   padding: 14px;
