@@ -595,6 +595,23 @@ video {
   background: #06a763;
 }
 
+#timeline-experience {
+  /*experience section*/
+  position: relative;
+}
+#timeline-experience::before {
+  /*straight line*/
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 23px;
+  left: 50%;
+  height: 99.5%;
+  width: 4px;
+  opacity: 0.3;
+  background: #06a763;
+}
+
 .timeline-block {
   position: relative;
 }
@@ -703,7 +720,7 @@ video {
     /*vertical line for education in in min width 768 */
     left: 50%;
     margin-left: -2px;
-    height: 77.1%;
+    height: 55.1%;
     opacity: 0.4;
     background: #06a763;
   }
@@ -712,7 +729,7 @@ video {
     /*vertical line for experience in min width 768 */
     left: 50%;
     margin-left: -2px;
-    height: 69.1%;
+    height: 80%;
     opacity: 0.4;
     background: #06a763;
   }
@@ -810,6 +827,7 @@ video {
   /* background-color: #202020; */
   border-radius: 6px;
   overflow: hidden;
+  margin-bottom: 10px;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
