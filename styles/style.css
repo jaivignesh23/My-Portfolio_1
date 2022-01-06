@@ -103,7 +103,7 @@ html.night {
 }
 
 .switch-wrapper .toggle-wrapper #switch:checked + label {
-  background: #007bff;
+  background: #06a763;
 }
 
 .container {
