@@ -994,6 +994,10 @@ body.night #v-card-holder #v-card #profile .slant {
   padding-top: 5% !important;
   color: #333 !important;
 }
+
+body.night .carousel-control {
+  color: #fff !important;
+}
 /*============================Projects=============================================*/
 .project-item {
   /* background-color: #202020; */
